@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- 위 3개의 메타 태그는 *반드시* head 태그의 처음에 와야합니다; 어떤 다른 콘텐츠들은 반드시 이 태그들 *다음에* 와야 합니다 -->
+  
   <link rel="shortcut icon" href="images/favicon.png" />
   <title>김찬우, 최의윤 결혼합니다</title>
 
@@ -20,7 +20,7 @@
     }
 
     body {
-      background-color: #333;
+      background-color: #000000;
       max-width: 420px;
       text-align: center;
       margin: 0 auto;
@@ -36,18 +36,18 @@
     }
 
     .app {
-      background-color: #f3f3f3;
+      background-color: #E0EDF4;
       color: #333;
     }
 
     .top-title {
       padding: 48px 16px 48px 16px;
-      background-color: #fff;
+      background-color: #E0EDF4;
     }
 
     .date-place {
       padding: 48px 0px 48px 0px;
-      background-color: #fff;
+      background-color: #E0EDF4;
     }
 
     .section-title {
@@ -106,6 +106,10 @@
       margin-top: 30px;
     }
 
+    .image_top_gradient {
+      mask-image: linear-gradient(to top, rgba(0, 0, 0, 1.0) 90%, transparent 100%);
+    }
+    
     .transfortation {
       padding: 54px 0;
     }
@@ -289,30 +293,18 @@
 
 <body>
   <div class="app">
-    <div class="top-title">
-      <div class="row">
-        <div class="col-5">
-          <span style="font-size: 1.1rem;">김찬우</span><br>clyne
-        </div>
-        <div class="col-2">
-          <div class="date-container">
-            <div class="date">
-              <div class="month">08</div>
-              <div class="divider">
-                <div class="divider2"></div>
-              </div>
-              <div class="day">11</div>
-            </div>
-          </div>
-        </div>
-        <div class="col-5">
-          <span style="font-size: 1.1rem;">최의윤</span><br>
-        </div>
-      </div>
-    </div>
-
+  
     <div>
-      <img class="img-fluid" src="images/img_gallery_01.jpeg" alt="...">
+      <img class="img-fluid" src="images/top_title.png" alt="..." style="margin-bottom: 47px; margin-top: 73px">
+      <img class="img-fluid" src="images/title.png" alt="..." style="margin-bottom: 39px;">
+      <img class="img-fluid" src="images/sub_title_1.png" alt="..." style="margin-bottom: 6px;">
+      <img class="img-fluid" src="images/sub_title_2.png" alt="..." style="margin-bottom: 9px;">
+      <div class="image_top_gradient">
+        <img class="img-fluid" src="images/img_gallery_01.jpeg" alt="..." background="-moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 80%);">
+      </div>
+      <img class="img-fluid" src="images/message_1.png" alt="..." style="margin-top: 95px; margin-bottom: 51px;">
+      <img class="img-fluid" src="images/message_2.png" alt="..." style=" margin-bottom: 114px;">
+      <img class="img-fluid" src="images/message_2.png" alt="..." style=" margin-bottom: 114px;">
     </div>
 
     <div class="date-place">
