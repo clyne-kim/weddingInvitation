@@ -13,14 +13,37 @@
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
   <style type="text/css">
-    @import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;600;700&display=swap');
 
-    * {
-      font-family: 'Gowun Batang', serif;
+    /* * {
+      font-family: 'Noto Serif KR', serif;
+    } */
+
+
+    .noto-serif-kr-regular {
+      font-family: "Noto Serif KR", serif;
+      font-weight: 500;
+      font-style: normal;
+      color: #2260A9;
+    }
+
+    .noto-serif-kr-semibold {
+      font-family: "Noto Serif KR", serif;
+      font-weight: 600;
+      font-style: normal;
+      color: #2260A9;
+    }
+
+    .noto-serif-kr-bold {
+      font-family: "Noto Serif KR", serif;
+      font-weight: 700;
+      font-style: normal;
+      color: #2260A9;
     }
 
     body {
-      background-color: #000000;
+      /* background-color: #000000; */
+      background-color: #E0EDF4;
       max-width: 420px;
       text-align: center;
       margin: 0 auto;
@@ -295,60 +318,47 @@
   <div class="app">
   
     <div>
-      <img class="img-fluid" src="images/top_title.png" alt="..." style="margin-bottom: 47px; margin-top: 73px">
-      <img class="img-fluid" src="images/title.svg" alt="..." style="margin-bottom: 39px;">
-      <img class="img-fluid" src="images/sub_title_1.png" alt="..." style="margin-bottom: 6px;">
-      <img class="img-fluid" src="images/sub_title_2.png" alt="..." style="margin-bottom: 9px;">
+      <div style="margin-bottom: 47px; padding-top: 73px; background-color: #E0EDF4;" >
+        <div class="noto-serif-kr-semibold" 
+             style="line-height: 1rem; letter-spacing: 2px; font-size: 11px;">
+          WEDDING INVITATION
+        </div>
+      </div>
+      <img class="img-fluid" src="images/title.svg" style="margin-bottom: 39px;">
+      <div class="noto-serif-kr-regular"
+           style="line-height: 2rem; letter-spacing: 0.5px; font-size: 15px; margin-bottom: 6px;">
+        2024. 8. 11 SUN 11AM
+      </div>
+      <div class="noto-serif-kr-regular"
+           style="line-height: 1rem; letter-spacing: 0.5px; font-size: 14px; margin-bottom: 9px;">
+        HOTEL ELIENA 5F GRAND BALLROOM
+      </div>
+
       <div class="image_top_gradient">
-        <img class="img-fluid" src="images/img_gallery_01.jpeg" alt="..." background="-moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 80%);">
-      </div>
-      <img class="img-fluid" src="images/message_1.png" alt="..." style="margin-top: 95px; margin-bottom: 51px;">
-      <img class="img-fluid" src="images/message_2.png" alt="..." style=" margin-bottom: 114px;">
-      <img class="img-fluid" src="images/message_2.png" alt="..." style=" margin-bottom: 114px;">
-    </div>
-
-    <div class="date-place">
-      <div style="line-height: 2rem;">2024년 8월 11일 일요일 오전 11시</div>
-      <div style="line-height: 2rem;">엘리에나 호텔 5층</div>
-    </div>
-
-    <div class="invitation-msg">
-      <div>
-        <div class="section-subtitle">2024.08.11</div>
-        <div class="section-title">초대합니다</div>
+        <img class="img-fluid" src="images/img_gallery_01.jpeg" background="-moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 80%);">
       </div>
 
-      <div style="margin-top: 64px; font-size: 0.9rem;">
-        <div>초록빛 싱그러움 가득한 8월의 봄날
-          <br>두 사람이 같은 곳을 바라보며
-          <br>평생 함께 걷고자 합니다.
-          <br>저희의 앞날을 축복해 주시고
-          <br>따뜻하게 격려해 주시면
-          <br>더없는 기쁨으로 간직하겠습니다.
-        </div>
+      <div class="noto-serif-kr-regular"
+           style="line-height: 1rem; 
+                  letter-spacing: 0.5px; 
+                  font-size: 14px; 
+                  margin-top: 70px; 
+                  margin-bottom: 41px; 
+                  line-height: 30px;
+                  color: #405772;">
+        <br>뜨거운 여름날 그늘이 되어주는 사람을 만났습니다.
+        <br>서로를 소중한 한줄기 바람으로 여기며
+        <br>항상 처음과 같이 사랑하며 살겠습니다.
+        <br>오셔서 저희의 푸르른 앞날을 축복해 주세요.
       </div>
 
-      <div style="margin-top: 64px;">
-        <img class="img-fluid" src="images/img_gallery_01.jpeg" alt="...">
-      </div>
-
-      <div class="newlyweds_phones" style="padding: 20px 0px 20px 0px;background-color: #eceae9;">
-        <div style="margin-left: 3px;">
-          <span style="letter-spacing: 1.5px;">김우태 · 정미희</span>
-          <span class="of-child">
-            <span>의</span>
-            <span style="display: inline-block;width: 2rem;">아들</span>
-          </span>
-          <span style="letter-spacing: 1.5px;">찬우</span>
-        </div>
-        <div>
-          <span style="letter-spacing: 1.5px;">윤지호 · 박현숙</span>
-          <span class="of-child">
-            <span>의</span>
-            <span style="display: inline-block;width: 2rem;">딸</span>
-          </span>
-          <span style="letter-spacing: 1.5px;">의윤</span>
-        </div>
+      <div class="noto-serif-kr-bold"
+           style="line-height: 1rem; 
+                  letter-spacing: 0.5px; 
+                  font-size: 14px; 
+                  margin-bottom: 51px; 
+                  color: #405772;">
+        <br>찬우 그리고 의윤 올림
       </div>
     </div>
 
@@ -362,67 +372,67 @@
         <table class="cal-table table table-responsive" style="margin: 24px 0;text-align: center;">
           <tbody>
             <tr>
-              <td class="day">S</td>
-              <td class="day">M</td>
-              <td class="day">T</td>
-              <td class="day">W</td>
-              <td class="day">T</td>
-              <td class="day">F</td>
-              <td class="day">S</td>
+              <td class="day">일</td>
+              <td class="day">월</td>
+              <td class="day">화</td>
+              <td class="day">수</td>
+              <td class="day">목</td>
+              <td class="day">금</td>
+              <td class="day">토</td>
             </tr>
 
             <tr>
+              <td class="day"></td>
+              <td class="day"></td>
+              <td class="day"></td>
+              <td class="day"></td>
               <td class="day">1</td>
               <td class="day">2</td>
               <td class="day">3</td>
+            </tr>
+
+            <tr>
               <td class="day">4</td>
               <td class="day">5</td>
               <td class="day">6</td>
               <td class="day">7</td>
-            </tr>
-
-            <tr>
               <td class="day">8</td>
               <td class="day">9</td>
               <td class="day">10</td>
-              <td class="day">11</td>
-              <td class="day">12</td>
-              <td class="day">13</td>
-              <td class="day">14</td>
-            </tr>
-
-            <tr>
-              <td class="day">15</td>
-              <td class="day">16</td>
-              <td class="day">17</td>
-              <td class="day">18</td>
-              <td class="day">19</td>
-              <td class="day">20</td>
-              <td class="day">21</td>
             </tr>
 
             <tr>
               <td class="day">
                 <div class="cal-dday">
-                  <div>22</div>
+                  <div>11</div>
                 </div>
               </td>
+              <td class="day">12</td>
+              <td class="day">13</td>
+              <td class="day">14</td>
+              <td class="day">15</td>
+              <td class="day">16</td>
+              <td class="day">17</td>
+            </tr>
+
+            <tr>
+              <td class="day">18</td>
+              <td class="day">19</td>
+              <td class="day">20</td>
+              <td class="day">21</td>
+              <td class="day">22</td>
               <td class="day">23</td>
               <td class="day">24</td>
+            </tr>
+
+            <tr>
               <td class="day">25</td>
               <td class="day">26</td>
               <td class="day">27</td>
               <td class="day">28</td>
-            </tr>
-
-            <tr>
               <td class="day">29</td>
               <td class="day">30</td>
               <td class="day">31</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
             </tr>
           </tbody>
         </table>
@@ -581,15 +591,15 @@
             <td colspan="2">신랑측 계좌번호</td>
           </tr>
           <tr class="account-table-item">
-            <td>카카오뱅크 3333-06-0346285<br>김성운</td>
+            <td>카카오뱅크 3333-12-3456789<br>김찬우</td>
             <td>
-              <button class="btn-copy" onclick="copyToClipboard('카카오뱅크 3333-06-0346285 김성운')">복사</button>
+              <button class="btn-copy" onclick="copyToClipboard('카카오뱅크 3333-12-3456789 김찬우')">복사</button>
             </td>
           </tr>
           <tr class="account-table-item">
-            <td>카카오뱅크 3333-01-1587857<br>김찬우</td>
+            <td>카카오뱅크 3333-12-3456789<br>김찬우</td>
             <td>
-              <button class="btn-copy" onclick="copyToClipboard('카카오뱅크 3333-01-1587857 김찬우')">복사</button>
+              <button class="btn-copy" onclick="copyToClipboard('카카오뱅크 3333-12-3456789 김찬우')">복사</button>
             </td>
           </tr>
         </tbody>
@@ -601,15 +611,15 @@
             <td colspan='2'>신부측 계좌번호</td>
           </tr>
           <tr class="account-table-item">
-            <td>하나은행 177-890254-22207<br>승도현</td>
+            <td>카카오뱅크 3333-12-3456789<br>최의윤</td>
             <td>
-              <button class="btn-copy" onclick="copyToClipboard('하나은행 177-890254-22207 승도현')">복사</button>
+              <button class="btn-copy" onclick="copyToClipboard('카카오뱅크 3333-12-3456789 최의윤')">복사</button>
             </td>
           </tr>
           <tr class="account-table-item">
-            <td>카카오뱅크 3333-13-4588460<br>최의윤</td>
+            <td>카카오뱅크 3333-12-3456789<br>최의윤</td>
             <td>
-              <button class="btn-copy" onclick="copyToClipboard('카카오뱅크 3333-13-4588460 최의윤')">복사</button>
+              <button class="btn-copy" onclick="copyToClipboard('카카오뱅크 3333-12-3456789 최의윤')">복사</button>
             </td>
           </tr>
         </tbody>
@@ -623,7 +633,7 @@
       </div>
       <div>
         <img class="share-icon" src="images/ic_link.png" />
-        <button class="btn-share" onclick="copyToClipboard('https://clyne-kim.github.io/weddinginvi')">
+        <button class="btn-share" onclick="copyToClipboard('https://clyne-kim.github.io/weddingInvitation')">
           청첩장 주소 복사하기</button>
       </div>
     </div>
@@ -663,14 +673,15 @@
     Kakao.init("94ce40eafab4919d1e1a802149248104");
 
     function sendLink() {
-      Kakao.Link.sendCustom({
-        templateId: 74937,
-        templateArgs: {
-          title: "test",
-          description: "test1",
-          url: "https://kimkevin.github.io/weddinginvi",
-        },
-      });
+      alert("카카오톡 공유 준비중");
+      // Kakao.Link.sendCustom({
+      //   templateId: 74937,
+      //   templateArgs: {
+      //     title: "test",
+      //     description: "test1",
+      //     url: "https://kimkevin.github.io/weddinginvi",
+      //   },
+      // });
     }
 
     function copyToClipboard(text) {
