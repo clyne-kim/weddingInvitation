@@ -51,6 +51,8 @@
     
     .info-section {
       background-color: #E0EDF4;
+      padding-right: 40px;
+      padding-left: 40px;
     }
 
     .account-section {
@@ -59,6 +61,10 @@
 
     .share-section {
       background-color: #E0EDF4;
+      padding-top: 48px;
+      padding-left: 81px;
+      padding-right: 81px;
+      padding-bottom: 59px;
     }
 
 
@@ -79,30 +85,7 @@
       margin-bottom: 12px;
       padding-right: 0;
     }
-
-    .gallery .container {
-      margin-top: 30px;
-    } */
-
-
-
-    .swipe {
-  overflow: hidden;
-  visibility: hidden;
-  position: relative;
-}
-.swipe-wrap {
-  overflow: hidden;
-  position: relative;
-}
-.swipe-wrap > div {
-  float:left;
-  width:100%;
-  position: relative;
-}
-
-
-
+ */
 
     
     .column {
@@ -405,205 +388,324 @@
       </div>
     </div>
 
+    <div style="height: 99px;"></div>
+
+    <div class="noto-serif-kr-semibold"
+         style="line-height: 25.87px; 
+                letter-spacing: 0px; 
+                font-size: 18px; 
+                color: #4880C3;">
+      LOCATION
+    </div>
+
+    <div style="height: 15px;"></div>
+
+    <div class="noto-serif-kr-semibold"
+         style="line-height: 20.12px; 
+                letter-spacing: 0px; 
+                font-size: 14px; 
+                color: #405772;">
+      호텔 엘리에나 5층 그랜드볼룸
+    </div>
+
+    <div style="height: 5px;"></div>
+
+    <div class="noto-serif-kr-regular"
+         style="line-height: 17.24px; 
+                letter-spacing: 0px; 
+                font-size: 12px; 
+                color: #405772;">
+      서울특별시 강남구 논현로 645
+    </div>
+
+    <div style="height: 29px;"></div>
+
+    <!-- 카카오맵 -->
+    <div id="daumRoughmapContainer1713690019866" 
+         class="root_daum_roughmap root_daum_roughmap_landing" 
+         style="width: 100%; height: 360px; background-color: gray;">
+         카카오맵
+    </div>
+
+    <div style="height: 10px;"></div>
+
+    <div style="display: flex; justify-content: space-evenly;">
+      <button id="go_kakaomap"
+              style="background-color: #B9D8FD; 
+                     border-radius: 4px; 
+                     border-color: transparent; 
+                     padding: 7px; 
+                     width: 50%;">
+        <img src="images/kakao_map.svg" width="30px" height="30px">
+        <text class="noto-serif-kr-semibold"
+              style="line-height: 20.12px; 
+                      letter-spacing: 0px; 
+                      font-size: 12px; 
+                      margin-left: 7px;
+                      color: #4880C3;">
+            카카오맵으로 보기
+        </text>
+        </button>
+        <div style="width: 10px"></div>
+        <button id="go_navermap"
+              style="background-color: #B9D8FD; 
+                    border-radius: 4px; 
+                    border-color: transparent; 
+                    padding: 7px; 
+                    width: 50%;">
+          <img src="images/naver_map.svg" width="30px" height="30px">
+          <text class="noto-serif-kr-semibold"
+                style="line-height: 20.12px; 
+                        letter-spacing: 0px; 
+                        font-size: 12px; 
+                        margin-left: 7px;
+                        color: #4880C3;">
+              네이버지도로 보기
+          </text>
+        </button>
+    </div>
+    
+    <div style="height: 50px;"></div>
+
+    <!-- 지하철 -->
+    <div class="noto-serif-kr-semibold"
+         style="line-height: 23px; 
+                letter-spacing: 0px; 
+                font-size: 16px; 
+                color: #4880C3;">
+      지하철
+    </div>
+
+    <div style="height: 9px;"></div>
+
+    <div class="noto-serif-kr-regular"
+         style="line-height: 18.68pxpx; 
+                letter-spacing: 0px; 
+                font-size: 13px; 
+                color: #405772;">
+      <text style="color: #6F7824;">7호선</text> 학동역 (4번 출구) 도보 4분 거리
+      <div style="height: 6px;"></div>
+      <text style="color: #AA8132;">9호선</text> 언주역 (2번 출구) 도보 6분 거리 
+    </div> 
+    <div style="height: 34px;"></div>
+
+    <!-- 버스 -->
+    <div class="noto-serif-kr-semibold"
+         style="line-height: 23px; 
+                letter-spacing: 0px; 
+                font-size: 16px; 
+                color: #4880C3;">
+      버스
+    </div>
+
+    <div style="height: 9px;"></div>
+
+    <div class="noto-serif-kr-regular"
+         style="line-height: 18.68pxpx; 
+                letter-spacing: 0px; 
+                font-size: 13px; 
+                color: #405772;">
+      <text style="color: #2A479B;">147, 241, 463, </text>
+      <text style="color: #3B9D37;">3412, 4211 </text>논현동고개(23-119) 하차
+      <div style="height: 3px;"></div>
+      학동역 방면 도보 130m
+      <div style="height: 10px;"></div>
+      <text style="color: #2A479B;">147, 463, </text>
+      <text style="color: #3B9D37;">4211 </text>논현고개(23-146) 하차
+      <div style="height: 3px;"></div>
+      맞은편 도보 140m
+    </div> 
+    <div style="height: 34px;"></div>
+
+    <!-- 주차 -->
+    <div class="noto-serif-kr-semibold"
+         style="line-height: 23px; 
+                letter-spacing: 0px; 
+                font-size: 16px; 
+                color: #4880C3;">
+      주차
+    </div>
+
+    <div style="height: 9px;"></div>
+
+    <div class="noto-serif-kr-regular"
+         style="line-height: 18.68pxpx; 
+                letter-spacing: 0px; 
+                font-size: 13px; 
+                color: #405772;">
+      호텔 정문에서 주차요원의 안내를 받으실 수 있으며,
+    </div>
+    <div style="height: 4px;"></div>
+    <div class="noto-serif-kr-regular"
+         style="line-height: 18.68pxpx; 
+                letter-spacing: 0px; 
+                font-size: 13px; 
+                color: #405772;">
+      2시간 무료 주차가 가능합니다.
+    </div>
+
+    <div style="height: 72px;"></div>
+
   </div>
+
+
+
+  <!-- 계좌 -->
+  <div class="account-section">
+    <div style="height: 76px;"></div>
+    <div class="noto-serif-kr-semibold"
+         style="line-height: 23px; 
+                letter-spacing: 0px; 
+                font-size: 16px; 
+                color: #4880C3;">
+      마음 전하실 곳
+    </div>
+    <div style="height: 34.36px;"></div>
+  </div>
+
 
   <!-- 공유하기 -->
   <div class="share-section">
 
+    <button id="kakaotalk-share"
+            style="background-color: #B9D8FD; 
+                   border-radius: 4px; 
+                   border-color: transparent; 
+                   padding: 7px; 
+                   width: 100%;">
+    <img src="images/ico_kakaotalk.svg" width="30px" height="30px">
+    <text class="noto-serif-kr-semibold"
+          style="line-height: 20.12px; 
+                  letter-spacing: 0px; 
+                  font-size: 14px; 
+                  margin-left: 7px;
+                  color: #4880C3;">
+        카카오톡으로 공유하기
+      </text>
+    </button>
+
+    <div style="height: 16px;"></div>
+
+    <button id="url-share"
+            style="background-color: #B9D8FD; 
+                   border-radius: 4px; 
+                   border-color: transparent; 
+                   padding: 12px; 
+                   width: 100%;">
+    <img src="images/ico_share.svg" width="20px" height="20px">
+    <text class="noto-serif-kr-semibold"
+          style="line-height: 20.12px; 
+                  letter-spacing: 0px; 
+                  font-size: 14px; 
+                  margin-left: 7px;
+                  margin-right: 6px;
+                  color: #4880C3;">
+        청첩장 주소 복사하기
+      </text>
+    </button>
   </div>
 
-    <div class="modal fade" id="galleryModalToggle" aria-hidden="true" aria-labelledby="galleryModalToggle"
-      tabindex="-1">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="galleryModalToggle">갤러리</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel"
-              data-bs-interval="false">
-              <div class="carousel-inner">
-                <div class="carousel-item">
-                  <img src="images/img_main.png" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="images/img_main.png" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="images/img_main.png" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="images/img_main.png" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="images/img_main.png" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="images/img_main.png" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="images/img_main.png" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="images/img_main.png" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="images/img_main.png" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="images/img_main.png" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="images/img_main.png" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="images/img_main.png" class="d-block w-100" alt="...">
-                </div>
+
+
+
+
+
+
+  <div class="modal fade" id="galleryModalToggle" aria-hidden="true" aria-labelledby="galleryModalToggle"
+    tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="galleryModalToggle">갤러리</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel"
+            data-bs-interval="false">
+            <div class="carousel-inner">
+              <div class="carousel-item">
+                <img src="images/img_main.png" class="d-block w-100" alt="...">
               </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
+              <div class="carousel-item">
+                <img src="images/img_main.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/img_main.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/img_main.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/img_main.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/img_main.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/img_main.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/img_main.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/img_main.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/img_main.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/img_main.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/img_main.png" class="d-block w-100" alt="...">
+              </div>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
 
+  <!--
+    2. 설치 스크립트
+    * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+  -->
+  <script charset="UTF-8" 
+          class="daum_roughmap_loader_script" 
+          src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js">
 
+  </script>
 
+  <!-- 3. 실행 스크립트 -->
+  <script charset="UTF-8">
+    new daum.roughmap.Lander({
+      "timestamp" : "1713690019866",
+      "key" : "2j3fp",
+      "mapWidth" : "640",
+      "mapHeight" : "360"
+    }).render();
 
+    document.getElementById("go_kakaomap").onclick = () => {
+      alert("카카오맵으로 이동!");
+    };
 
-    <div class="transfortation">
-      <div class="section-title">오시는 길</div>
-      <div class="section-desc">LOCATION</div>
-      <div style="margin-top: 40px;margin-bottom: 20px;">
-        <div>호텔 엘리에나 5층 그랜드볼룸</div>
-        <div style="color: #797979;font-size: 0.9rem;">서울특별시 강남구 논현로 645</div>
-      </div>
+    document.getElementById("go_navermap").onclick = () => {
+      alert("네이버지도로 이동!");
+    };
 
-      <div id="map" style="width:100%;height:300px;"></div>
-
-      <div class="t-container">
-        <div class="t-title">지하철</div>
-        <div class="t-content">[7호선]
-          <span style="font-weight: bold;">학동역</span>
-          하차
-          <br>• 4번 출구 도보 1분
-          <br>• ??
-        </div>
-      </div>
-
-      <div class="t-container">
-        <div class="t-title">주차</div>
-        <div class="t-content">건물 내 <u>2시간</u> 무료주차</div>
-      </div>
-
-      <div style="margin-top:60px;margin-left:30px; margin-right: 30px;border-bottom: 1px solid #ddcccc;"></div>
-    </div>
-
-    <div class="account-info">
-      <div class="section-title" style="margin-bottom: 40px;">마음 전하실 곳</div>
-
-      <!-- <div style="margin-bottom: 30px;font-size: 0.8rem;line-height: 1.4rem;">참석이 어려우신 분들은<br>축하의 마음을 전달해주세요.</div> -->
-
-      <table class="table table-responsive">
-        <tbody>
-          <tr class="account-table-header">
-            <td colspan="2">신랑측 계좌번호</td>
-          </tr>
-          <tr class="account-table-item">
-            <td>카카오뱅크 3333-12-3456789<br>김찬우</td>
-            <td>
-              <button class="btn-copy" onclick="copyToClipboard('카카오뱅크 3333-12-3456789 김찬우')">복사</button>
-            </td>
-          </tr>
-          <tr class="account-table-item">
-            <td>카카오뱅크 3333-12-3456789<br>김찬우</td>
-            <td>
-              <button class="btn-copy" onclick="copyToClipboard('카카오뱅크 3333-12-3456789 김찬우')">복사</button>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-
-      <table class="table table-responsive">
-        <tbody>
-          <tr class="account-table-header">
-            <td colspan='2'>신부측 계좌번호</td>
-          </tr>
-          <tr class="account-table-item">
-            <td>카카오뱅크 3333-12-3456789<br>최의윤</td>
-            <td>
-              <button class="btn-copy" onclick="copyToClipboard('카카오뱅크 3333-12-3456789 최의윤')">복사</button>
-            </td>
-          </tr>
-          <tr class="account-table-item">
-            <td>카카오뱅크 3333-12-3456789<br>최의윤</td>
-            <td>
-              <button class="btn-copy" onclick="copyToClipboard('카카오뱅크 3333-12-3456789 최의윤')">복사</button>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <div class="share-link" style="background-color: #fff;">
-      <div style="margin-bottom: 10px;">
-        <img class="share-icon" src="images/ic_kakaotalk.png" />
-        <button class="btn-share" onclick="sendLink()">카카오톡으로 공유하기</button>
-      </div>
-      <div>
-        <img class="share-icon" src="images/ic_link.png" />
-        <button class="btn-share" onclick="copyToClipboard('https://clyne-kim.github.io/weddingInvitation')">
-          청첩장 주소 복사하기</button>
-      </div>
-    </div>
-  
-
-  <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=qqibacvqv0"></script>
-
-  <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
-
-  <script>
-    (function () {
-      var item = document.getElementById("gallery-item");
-
-      var myModal = new bootstrap.Modal(
-        document.getElementById("galleryModalToggle")
-      );
-
-      item.addEventListener("click", function (event) {
-        myModal.show();
-        const index = event.target.getAttribute('data-index');
-        var myCarousel = document.getElementsByClassName(`carousel-item`)[index - 1]
-        myCarousel.classList.add('active');
-      });
-
-      var myModalEl = document.getElementById('galleryModalToggle')
-      myModalEl.addEventListener('hidden.bs.modal', function (event) {
-        [...document.getElementsByClassName(`carousel-item`)].forEach((ele) => {
-          ele.classList.remove('active');
-        })
-      })
-    })();
-
-    Kakao.init("94ce40eafab4919d1e1a802149248104");
-
-    function sendLink() {
-      alert("카카오톡 공유 준비중");
+    document.getElementById("kakaotalk-share").onclick = () => {
+      alert("카카톡으로 공유");
       // Kakao.Link.sendCustom({
       //   templateId: 74937,
       //   templateArgs: {
@@ -612,33 +714,15 @@
       //     url: "https://kimkevin.github.io/weddinginvi",
       //   },
       // });
-    }
-
-    function copyToClipboard(text) {
-      /* Copy the text inside the text field */
-      const t = document.createElement("textarea");
-      document.body.appendChild(t);
-      t.value = text;
-      t.select();
-      document.execCommand('copy');
-      document.body.removeChild(t);
-
-      /* Alert the copied text */
-      alert("복사되었습니다.\n필요한 곳에 붙여넣기 하세요.");
-    }
-
-    var mapOptions = {
-      center: new naver.maps.LatLng(37.520848, 127.055902),
-      zoom: 16
     };
-
-    var map = new naver.maps.Map('map', mapOptions);
-
-    var marker = new naver.maps.Marker({
-      position: new naver.maps.LatLng(37.520848, 127.055902),
-      map: map
-    });
+    
+    document.getElementById("url-share").onclick = () => {
+      alert("복사되었습니다.");
+    };
   </script>
+
 </body>
 
 </html>
+
+
