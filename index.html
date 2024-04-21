@@ -423,31 +423,52 @@
     <!-- 카카오맵 -->
     <div id="daumRoughmapContainer1713690019866" 
          class="root_daum_roughmap root_daum_roughmap_landing" 
-         style="width: 100%; height: 360px; background-color: gray;">
-         카카오맵
+         style="width: 100%;">
     </div>
 
     <div style="height: 10px;"></div>
 
-    <div style="display: flex; justify-content: space-evenly;">
+    <div>
       <button id="go_kakaomap"
               style="background-color: #B9D8FD; 
                      border-radius: 4px; 
                      border-color: transparent; 
-                     padding: 7px; 
-                     width: 50%;">
-        <img src="images/kakao_map.svg" width="30px" height="30px">
+                     float: left;
+                     padding: 0%;
+                     padding-left: 4px;
+                     padding-top: 4px;
+                     padding-bottom: 4px;
+                     margin-right: 2%;
+                     width: 48%;">
+        <img src="images/kakao_map.svg" width="30px" height="30px" style="float: left;">
         <text class="noto-serif-kr-semibold"
-              style="line-height: 20.12px; 
-                      letter-spacing: 0px; 
+              style="letter-spacing: 0px; 
                       font-size: 12px; 
-                      margin-left: 7px;
                       color: #4880C3;">
-            카카오맵으로 보기
+            카카오맵에서 보기
         </text>
         </button>
-        <div style="width: 10px"></div>
-        <button id="go_navermap"
+        
+      <button id="go_navermap"
+            style="background-color: #B9D8FD; 
+                  border-radius: 4px; 
+                  border-color: transparent; 
+                  float: left;
+                  padding: 0%;
+                  padding-left: 4px;
+                  padding-top: 4px;
+                  padding-bottom: 4px;
+                  margin-left: 2%;
+                  width: 48%;">
+      <img src="images/naver_map.svg" width="30px" height="30px" style="float: left;">
+      <text class="noto-serif-kr-semibold"
+            style="letter-spacing: 0px; 
+                    font-size: 12px; 
+                    color: #4880C3;">
+          네이버 지도에서 보기
+      </text>
+      </button>
+        <!-- <button id="go_navermap"
               style="background-color: #B9D8FD; 
                     border-radius: 4px; 
                     border-color: transparent; 
@@ -460,12 +481,12 @@
                         font-size: 12px; 
                         margin-left: 7px;
                         color: #4880C3;">
-              네이버지도로 보기
+              네이버 지도
           </text>
-        </button>
+        </button> -->
     </div>
     
-    <div style="height: 50px;"></div>
+    <div style="height: 96px;"></div>
 
     <!-- 지하철 -->
     <div class="noto-serif-kr-semibold"
@@ -571,7 +592,7 @@
             style="background-color: #B9D8FD; 
                    border-radius: 4px; 
                    border-color: transparent; 
-                   padding: 7px; 
+                   height: 44px;
                    width: 100%;">
     <img src="images/ico_kakaotalk.svg" width="30px" height="30px">
     <text class="noto-serif-kr-semibold"
@@ -590,7 +611,7 @@
             style="background-color: #B9D8FD; 
                    border-radius: 4px; 
                    border-color: transparent; 
-                   padding: 12px; 
+                   height: 44px;
                    width: 100%;">
     <img src="images/ico_share.svg" width="20px" height="20px">
     <text class="noto-serif-kr-semibold"
@@ -692,7 +713,6 @@
     new daum.roughmap.Lander({
       "timestamp" : "1713690019866",
       "key" : "2j3fp",
-      "mapWidth" : "640",
       "mapHeight" : "360"
     }).render();
 
@@ -705,7 +725,7 @@
     };
 
     document.getElementById("kakaotalk-share").onclick = () => {
-      alert("카카톡으로 공유");
+      alert("카카오톡으로 공유");
       // Kakao.Link.sendCustom({
       //   templateId: 74937,
       //   templateArgs: {
