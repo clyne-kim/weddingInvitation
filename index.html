@@ -15,103 +15,58 @@
   <style type="text/css">
     @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;600;700&display=swap');
 
-    /* * {
-      font-family: 'Noto Serif KR', serif;
-    } */
-
-
     .noto-serif-kr-regular {
       font-family: "Noto Serif KR", serif;
       font-weight: 500;
       font-style: normal;
-      color: #2260A9;
     }
 
     .noto-serif-kr-semibold {
       font-family: "Noto Serif KR", serif;
       font-weight: 600;
       font-style: normal;
-      color: #2260A9;
     }
 
     .noto-serif-kr-bold {
       font-family: "Noto Serif KR", serif;
       font-weight: 700;
       font-style: normal;
-      color: #2260A9;
     }
 
     body {
-      /* background-color: #000000; */
-      background-color: #E0EDF4;
-      max-width: 420px;
+      background-color: #000000;
+      /* background-color: #E0EDF4; */
+      max-width: 430px;
       text-align: center;
       margin: 0 auto;
     }
 
-    div {
-      line-height: 2rem;
-    }
-
-    tr,
-    td {
-      border: 0 !important;
-    }
-
-    .app {
+    .main-section {
       background-color: #E0EDF4;
-      color: #333;
     }
-
-    .top-title {
-      padding: 48px 16px 48px 16px;
+    
+    .sub-section {
+      background-color: #D4E7F0;
+    }
+    
+    .info-section {
       background-color: #E0EDF4;
     }
 
-    .date-place {
-      padding: 48px 0px 48px 0px;
+    .account-section {
+      background-color: #F7FCFF;
+    }
+
+    .share-section {
       background-color: #E0EDF4;
     }
 
-    .section-title {
-      color: #a96b6d;
-      line-height: 2.0rem;
-      font-size: 1.3rem;
-      letter-spacing: 1px;
+
+    .image_top_gradient {
+      mask-image: linear-gradient(to top, rgba(0, 0, 0, 1.0) 85.581%, transparent 100%);
     }
 
-    .section-subtitle {
-      color: #a96b6d;
-      line-height: 2.0rem;
-      font-size: 0.8rem;
-      letter-spacing: .18rem;
-    }
-
-    .section-desc {
-      color: #a96b6d;
-      line-height: 2.0rem;
-      font-size: 0.5rem;
-      letter-spacing: .18rem;
-    }
-
-    .calendar {
-      padding: 64px 0;
-      margin-left: 30px;
-      margin-right: 30px;
-    }
-
-    .of-child {
-      font-size: 0.8rem;
-      color: #8a857f;
-      letter-spacing: 1px;
-    }
-
-    .invitation-msg {
-      padding-top: 64px;
-      margin-bottom: 64px;
-      background-color: #f3f3f3;
-    }
-
+/*     
     .gallery {
       padding: 64px 0;
     }
@@ -127,33 +82,29 @@
 
     .gallery .container {
       margin-top: 30px;
-    }
+    } */
 
-    .image_top_gradient {
-      mask-image: linear-gradient(to top, rgba(0, 0, 0, 1.0) 90%, transparent 100%);
-    }
+
+
+    .swipe {
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+}
+.swipe-wrap {
+  overflow: hidden;
+  position: relative;
+}
+.swipe-wrap > div {
+  float:left;
+  width:100%;
+  position: relative;
+}
+
+
+
+
     
-    .transfortation {
-      padding: 54px 0;
-    }
-
-    .transfortation .t-container {
-      margin-top: 24px;
-      padding: 0 36px;
-      text-align: left;
-    }
-
-    .transfortation .t-title {
-      color: #a96b6d;
-      font-size: 1rem;
-      line-height: 2rem;
-    }
-
-    .transfortation .t-content {
-      font-size: .9rem;
-      line-height: 1.8rem;
-    }
-
     .column {
       flex: 25%;
       max-width: 25%;
@@ -166,27 +117,6 @@
       line-height: 2.5rem;
     }
 
-    .cal-table tbody tr td:first-child {
-      color: #c6482a !important;
-    }
-
-    .cal-table .day {
-      padding: 0 0;
-      position: relative;
-      width: 45px;
-    }
-
-    .cal-dday {
-      color: #fff;
-      width: 30px;
-      height: 30px;
-      line-height: 30px;
-      background: #a96b6d;
-      border-radius: 30px;
-      position: absolute;
-      left: 7px;
-      top: 5px;
-    }
 
     .account-table-header {
       color: #63463c;
@@ -315,177 +245,172 @@
 </head>
 
 <body>
-  <div class="app">
-  
-    <div>
-      <div style="margin-bottom: 47px; padding-top: 73px; background-color: #E0EDF4;" >
-        <div class="noto-serif-kr-semibold" 
-             style="line-height: 1rem; letter-spacing: 2px; font-size: 11px;">
-          WEDDING INVITATION
+
+  <!-- 메인 인트로 -->
+  <div class="main-section">
+
+    <div style="height: 60px;"></div>
+
+    <div class="noto-serif-kr-semibold" 
+          style="line-height: 15.81px; letter-spacing: 1px; font-size: 11px; color: #4880C3;">
+      WEDDING INVITATION
+    </div>
+
+    <div style="height: 47px;"></div>
+
+    <!-- KIM CHANWOO and CHOI UIYOON -->
+    <img class="img-fluid" src="images/title.svg">
+
+    <div style="height: 39px;"></div>
+
+    <div class="noto-serif-kr-regular"
+          style="line-height: 21.56px; letter-spacing: 0px; font-size: 15px; color: #4880C3;">
+      2024. 8. 11 SUN 11AM
+    </div>
+
+    <div style="height: 6px;"></div>
+
+    <div class="noto-serif-kr-regular"
+          style="line-height: 20.12px; letter-spacing: 0px; font-size: 14px; color: #4880C3;">
+      HOTEL ELIENA 5F GRAND BALLROOM
+    </div>
+
+    <div style="height: 47px;"></div>
+
+    <div class="image_top_gradient">
+      <img class="img-fluid" 
+            src="images/img_main.png"
+            background="-moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 80%);">
+    </div>
+  </div>
+
+  <!-- 주요 안내 -->
+  <div class="sub-section">
+    <div style="height: 76.09px;"></div>
+
+    <div class="noto-serif-kr-regular"
+         style="letter-spacing: 0px; 
+                font-size: 14px; 
+                line-height: 29.12px;
+                color: #405772;">
+      뜨거운 여름날 그늘이 되어주는 사람을 만났습니다.
+      <br>서로를 소중한 한줄기 바람으로 여기며
+      <br>항상 처음과 같이 사랑하며 살겠습니다.
+      <br>오셔서 저희의 푸르른 앞날을 축복해 주세요.
+    </div>
+
+    <div style="height: 29.03px;"></div>
+
+    <div class="noto-serif-kr-bold"
+         style="line-height: 20.12px; 
+                letter-spacing: 0px; 
+                font-size: 14px; 
+                color: #405772;">
+      찬우 그리고 의윤 올림
+    </div>
+
+    <div style="height: 86.1px;"></div>
+
+    <img class="img-fluid" 
+         src="images/img_main.png" 
+         style="margin-bottom: 39px; padding-left: 79px; padding-right: 79px;">
+
+    <div style="height: 39px;"></div>
+
+
+    <img class="img-fluid" src="images/sub.svg">
+    
+    <div style="height: 42.18px;"></div>
+
+    <div class="noto-serif-kr-semibold"
+         style="line-height: 25.87px; 
+                letter-spacing: 0px; 
+                font-size: 18px; 
+                color: #405772;">
+      2024년 8월 11일 일요일 오전 11시
+    </div>
+    <div style="height: 6px;"></div>
+    <div class="noto-serif-kr-semibold"
+         style="line-height: 25.87px; 
+                letter-spacing: 0px; 
+                font-size: 18px; 
+                color: #405772;">
+      호텔 엘리에나 5층 그랜드볼룸
+    </div>
+
+    <div style="height: 69.93px;"></div>
+
+  </div>
+
+  <!-- 갤러리 및 정보 -->
+  <div class="info-section">
+
+    <div style="height: 54px;"></div>
+
+    <div class="noto-serif-kr-semibold"
+         style="line-height: 25.87px; 
+                letter-spacing: 0px; 
+                font-size: 18px; 
+                color: #4880C3;">
+      GALLERY
+    </div>
+
+    <div style="height: 15px;"></div>
+
+    <div class="noto-serif-kr-semibold"
+         style="line-height: 17.24px; 
+                letter-spacing: 0px; 
+                font-size: 12px; 
+                color: #405772;">
+      사진을 클릭하시면 크게 보실 수 있습니다.
+    </div>
+
+    <div style="height: 28px;"></div>
+
+    <div id="gallery-item" class="container">
+      <div class="row">
+        <div class="col-4">
+          <img src="images/img_main.png" class="img-fluid" data-index="1" />
         </div>
-      </div>
-      <img class="img-fluid" src="images/title.svg" style="margin-bottom: 39px;">
-      <div class="noto-serif-kr-regular"
-           style="line-height: 2rem; letter-spacing: 0.5px; font-size: 15px; margin-bottom: 6px;">
-        2024. 8. 11 SUN 11AM
-      </div>
-      <div class="noto-serif-kr-regular"
-           style="line-height: 1rem; letter-spacing: 0.5px; font-size: 14px; margin-bottom: 9px;">
-        HOTEL ELIENA 5F GRAND BALLROOM
-      </div>
-
-      <div class="image_top_gradient">
-        <img class="img-fluid" src="images/img_gallery_01.jpeg" background="-moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 80%);">
-      </div>
-
-      <div class="noto-serif-kr-regular"
-           style="line-height: 1rem; 
-                  letter-spacing: 0.5px; 
-                  font-size: 14px; 
-                  margin-top: 70px; 
-                  margin-bottom: 41px; 
-                  line-height: 30px;
-                  color: #405772;">
-        <br>뜨거운 여름날 그늘이 되어주는 사람을 만났습니다.
-        <br>서로를 소중한 한줄기 바람으로 여기며
-        <br>항상 처음과 같이 사랑하며 살겠습니다.
-        <br>오셔서 저희의 푸르른 앞날을 축복해 주세요.
-      </div>
-
-      <div class="noto-serif-kr-bold"
-           style="line-height: 1rem; 
-                  letter-spacing: 0.5px; 
-                  font-size: 14px; 
-                  margin-bottom: 51px; 
-                  color: #405772;">
-        <br>찬우 그리고 의윤 올림
-      </div>
-    </div>
-
-    <div class="calendar">
-      <div>
-        <div class="section-title">8월 11일</div>
-        <div class="section-subtitle">일요일 오전 11시</div>
-      </div>
-
-      <div style="border-top: 1px solid #ddcccc;border-bottom: 1px solid #ddcccc;padding: 0 16px;line-height: 2.0rem;">
-        <table class="cal-table table table-responsive" style="margin: 24px 0;text-align: center;">
-          <tbody>
-            <tr>
-              <td class="day">일</td>
-              <td class="day">월</td>
-              <td class="day">화</td>
-              <td class="day">수</td>
-              <td class="day">목</td>
-              <td class="day">금</td>
-              <td class="day">토</td>
-            </tr>
-
-            <tr>
-              <td class="day"></td>
-              <td class="day"></td>
-              <td class="day"></td>
-              <td class="day"></td>
-              <td class="day">1</td>
-              <td class="day">2</td>
-              <td class="day">3</td>
-            </tr>
-
-            <tr>
-              <td class="day">4</td>
-              <td class="day">5</td>
-              <td class="day">6</td>
-              <td class="day">7</td>
-              <td class="day">8</td>
-              <td class="day">9</td>
-              <td class="day">10</td>
-            </tr>
-
-            <tr>
-              <td class="day">
-                <div class="cal-dday">
-                  <div>11</div>
-                </div>
-              </td>
-              <td class="day">12</td>
-              <td class="day">13</td>
-              <td class="day">14</td>
-              <td class="day">15</td>
-              <td class="day">16</td>
-              <td class="day">17</td>
-            </tr>
-
-            <tr>
-              <td class="day">18</td>
-              <td class="day">19</td>
-              <td class="day">20</td>
-              <td class="day">21</td>
-              <td class="day">22</td>
-              <td class="day">23</td>
-              <td class="day">24</td>
-            </tr>
-
-            <tr>
-              <td class="day">25</td>
-              <td class="day">26</td>
-              <td class="day">27</td>
-              <td class="day">28</td>
-              <td class="day">29</td>
-              <td class="day">30</td>
-              <td class="day">31</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-
-    <div class="gallery">
-      <div>
-        <div class="section-title">갤러리</div>
-        <div class="section-desc">GALLERY</div>
-      </div>
-
-      <div id="gallery-item" class="container">
-        <div class="row">
-          <div class="col-4">
-            <img src="images/img_gallery_01.jpeg" class="img-fluid" data-index="1" />
-          </div>
-          <div class="col-4">
-            <img src="images/img_gallery_01.jpeg" class="img-fluid" data-index="2" />
-          </div>
-          <div class="col-4">
-            <img src="images/img_gallery_01.jpeg" class="img-fluid" data-index="3" />
-          </div>
-          <div class="col-4">
-            <img src="images/img_gallery_01.jpeg" class="img-fluid" data-index="4" />
-          </div>
-          <div class="col-4">
-            <img src="images/img_gallery_01.jpeg" class="img-fluid" data-index="5" />
-          </div>
-          <div class="col-4">
-            <img src="images/img_gallery_01.jpeg" class="img-fluid" data-index="6" />
-          </div>
-          <div class="col-4">
-            <img src="images/img_gallery_01.jpeg" class="img-fluid" data-index="7" />
-          </div>
-          <div class="col-4">
-            <img src="images/img_gallery_01.jpeg" class="img-fluid" data-index="8" />
-          </div>
-          <div class="col-4">
-            <img src="images/img_gallery_01.jpeg" class="img-fluid" data-index="9" />
-          </div>
-          <div class="col-4">
-            <img src="images/img_gallery_01.jpeg" class="img-fluid" data-index="10" />
-          </div>
-          <div class="col-4">
-            <img src="images/img_gallery_01.jpeg" class="img-fluid" data-index="11" />
-          </div>
-          <div class="col-4">
-            <img src="images/img_gallery_01.jpeg" class="img-fluid" data-index="12" />
-          </div>
+        <div class="col-4">
+          <img src="images/img_main.png" class="img-fluid" data-index="2" />
+        </div>
+        <div class="col-4">
+          <img src="images/img_main.png" class="img-fluid" data-index="4" />
+        </div>
+        <div class="col-4">
+          <img src="images/img_main.png" class="img-fluid" data-index="5" />
+        </div>
+        <div class="col-4">
+          <img src="images/img_main.png" class="img-fluid" data-index="6" />
+        </div>
+        <div class="col-4">
+          <img src="images/img_main.png" class="img-fluid" data-index="7" />
+        </div>
+        <div class="col-4">
+          <img src="images/img_main.png" class="img-fluid" data-index="8" />
+        </div>
+        <div class="col-4">
+          <img src="images/img_main.png" class="img-fluid" data-index="9" />
+        </div>
+        <div class="col-4">
+          <img src="images/img_main.png" class="img-fluid" data-index="10" />
+        </div>
+        <div class="col-4">
+          <img src="images/img_main.png" class="img-fluid" data-index="11" />
+        </div>
+        <div class="col-4">
+          <img src="images/img_main.png" class="img-fluid" data-index="12" />
         </div>
       </div>
     </div>
+
+  </div>
+
+  <!-- 공유하기 -->
+  <div class="share-section">
+
+  </div>
 
     <div class="modal fade" id="galleryModalToggle" aria-hidden="true" aria-labelledby="galleryModalToggle"
       tabindex="-1">
@@ -500,40 +425,40 @@
               data-bs-interval="false">
               <div class="carousel-inner">
                 <div class="carousel-item">
-                  <img src="images/img_gallery_01.jpeg" class="d-block w-100" alt="...">
+                  <img src="images/img_main.png" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                  <img src="images/img_gallery_01.jpeg" class="d-block w-100" alt="...">
+                  <img src="images/img_main.png" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                  <img src="images/img_gallery_01.jpeg" class="d-block w-100" alt="...">
+                  <img src="images/img_main.png" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                  <img src="images/img_gallery_01.jpeg" class="d-block w-100" alt="...">
+                  <img src="images/img_main.png" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                  <img src="images/img_gallery_01.jpeg" class="d-block w-100" alt="...">
+                  <img src="images/img_main.png" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                  <img src="images/img_gallery_01.jpeg" class="d-block w-100" alt="...">
+                  <img src="images/img_main.png" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                  <img src="images/img_gallery_01.jpeg" class="d-block w-100" alt="...">
+                  <img src="images/img_main.png" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                  <img src="images/img_gallery_01.jpeg" class="d-block w-100" alt="...">
+                  <img src="images/img_main.png" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                  <img src="images/img_gallery_01.jpeg" class="d-block w-100" alt="...">
+                  <img src="images/img_main.png" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                  <img src="images/img_gallery_01.jpeg" class="d-block w-100" alt="...">
+                  <img src="images/img_main.png" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                  <img src="images/img_gallery_01.jpeg" class="d-block w-100" alt="...">
+                  <img src="images/img_main.png" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                  <img src="images/img_gallery_01.jpeg" class="d-block w-100" alt="...">
+                  <img src="images/img_main.png" class="d-block w-100" alt="...">
                 </div>
               </div>
               <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
@@ -551,6 +476,11 @@
         </div>
       </div>
     </div>
+
+
+
+
+
 
     <div class="transfortation">
       <div class="section-title">오시는 길</div>
@@ -637,7 +567,7 @@
           청첩장 주소 복사하기</button>
       </div>
     </div>
-  </div>
+  
 
   <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=qqibacvqv0"></script>
 
