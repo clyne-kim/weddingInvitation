@@ -27,6 +27,38 @@
       font-style: normal;
     }
 
+    .account-font {
+      font-family: "Noto Serif KR", serif;
+      font-weight: 500;
+      font-style: normal;
+      letter-spacing: 0px; 
+      line-height: 17.24px;
+      font-size: 12px; 
+      color: #405772;
+    }
+
+    .account-copy-button {
+      background-color: #B9D8FD; 
+      border-radius: 4px; 
+      border-color: transparent; 
+      height: 24px;
+      width: 60px;
+    }
+
+    .account-copy-button-text {
+      letter-spacing: 0px; 
+      font-size: 10px;
+      display: flex;
+      align-self: center;
+      justify-content: center;
+      color: #4880C3;
+      font-family: "Noto Serif KR", serif;
+      font-weight: 500;
+      font-style: normal;
+    }
+
+    
+
     .noto-serif-kr-bold {
       font-family: "Noto Serif KR", serif;
       font-weight: 700;
@@ -36,7 +68,8 @@
     body {
       background-color: #000000;
       /* background-color: #E0EDF4; */
-      max-width: 430px;
+      max-width: 480px;
+      min-width: 320px;
       text-align: center;
       margin: 0 auto;
     }
@@ -49,10 +82,16 @@
       background-color: #D4E7F0;
     }
     
+    .gallery-section {
+      background-color: #E0EDF4;
+      padding-right: 36px;
+      padding-left: 36px;
+    }
+
     .info-section {
       background-color: #E0EDF4;
-      padding-right: 40px;
-      padding-left: 40px;
+      padding-right: 12px;
+      padding-left: 12px;
     }
 
     .account-section {
@@ -62,9 +101,9 @@
     .share-section {
       background-color: #E0EDF4;
       padding-top: 48px;
-      padding-left: 81px;
-      padding-right: 81px;
       padding-bottom: 59px;
+      padding-left: 75px;
+      padding-right: 75px;
     }
 
 
@@ -81,24 +120,22 @@
       padding-right: 12px;
     }
 
-    .gallery .col-4 {
+    .gallery .column {
       margin-bottom: 12px;
       padding-right: 0;
     }
  */
 
-    
     .column {
-      flex: 25%;
-      max-width: 25%;
-      padding: 0 4px;
+      max-width: 50%;
+      padding: 2px;
     }
 
-    .cal-table {
+    /* .cal-table {
       font-size: 0.8rem;
       width: 100%;
       line-height: 2.5rem;
-    }
+    } */
 
 
     .account-table-header {
@@ -200,30 +237,6 @@
       padding: 30px 40px;
     }
 
-    /* Extra small devices \(portrait phones, less than 576px) */
-    @media (max-width: 575.98px) {
-      body {}
-    }
-
-    /* Small devices (landscape phones, 576px and up) */
-    @media (min-width: 576px) and (max-width: 767.98px) {
-      body {}
-    }
-
-    /* Medium devices (tablets, 768px and up) */
-    @media (min-width: 768px) and (max-width: 991.98px) {
-      body {}
-    }
-
-    /* Large devices (desktops, 992px and up) */
-    @media (min-width: 992px) and (max-width: 1199.98px) {
-      body {}
-    }
-
-    /* Extra large devices (large desktops, 1200px and up) */
-    @media (min-width: 1200px) {
-      body {}
-    }
   </style>
 </head>
 
@@ -232,33 +245,33 @@
   <!-- 메인 인트로 -->
   <div class="main-section">
 
-    <div style="height: 60px;"></div>
+    <div style="height: 55px;"></div>
 
     <div class="noto-serif-kr-semibold" 
           style="line-height: 15.81px; letter-spacing: 1px; font-size: 11px; color: #4880C3;">
       WEDDING INVITATION
     </div>
 
-    <div style="height: 47px;"></div>
+    <div style="height: 43px;"></div>
 
     <!-- KIM CHANWOO and CHOI UIYOON -->
     <img class="img-fluid" src="images/title.svg">
 
-    <div style="height: 39px;"></div>
+    <div style="height: 37px;"></div>
 
     <div class="noto-serif-kr-regular"
           style="line-height: 21.56px; letter-spacing: 0px; font-size: 15px; color: #4880C3;">
       2024. 8. 11 SUN 11AM
     </div>
 
-    <div style="height: 6px;"></div>
+    <div style="height: 4px;"></div>
 
     <div class="noto-serif-kr-regular"
           style="line-height: 20.12px; letter-spacing: 0px; font-size: 14px; color: #4880C3;">
       HOTEL ELIENA 5F GRAND BALLROOM
     </div>
 
-    <div style="height: 47px;"></div>
+    <div style="height: 42px;"></div>
 
     <div class="image_top_gradient">
       <img class="img-fluid" 
@@ -269,7 +282,7 @@
 
   <!-- 주요 안내 -->
   <div class="sub-section">
-    <div style="height: 76.09px;"></div>
+    <div style="height: 76px;"></div>
 
     <div class="noto-serif-kr-regular"
          style="letter-spacing: 0px; 
@@ -282,7 +295,7 @@
       <br>오셔서 저희의 푸르른 앞날을 축복해 주세요.
     </div>
 
-    <div style="height: 29.03px;"></div>
+    <div style="height: 29px;"></div>
 
     <div class="noto-serif-kr-bold"
          style="line-height: 20.12px; 
@@ -292,13 +305,14 @@
       찬우 그리고 의윤 올림
     </div>
 
-    <div style="height: 86.1px;"></div>
+    <div style="height: 86px;"></div>
 
     <img class="img-fluid" 
          src="images/img_main.png" 
-         style="margin-bottom: 39px; padding-left: 79px; padding-right: 79px;">
+         style="max-width: 270px;">
+         <!-- style="padding-left: 79px; padding-right: 79px;"> -->
 
-    <div style="height: 39px;"></div>
+    <div style="height: 67.75px;"></div>
 
 
     <img class="img-fluid" src="images/sub.svg">
@@ -308,7 +322,7 @@
     <div class="noto-serif-kr-semibold"
          style="line-height: 25.87px; 
                 letter-spacing: 0px; 
-                font-size: 18px; 
+                font-size: 1.125rem; 
                 color: #405772;">
       2024년 8월 11일 일요일 오전 11시
     </div>
@@ -316,7 +330,7 @@
     <div class="noto-serif-kr-semibold"
          style="line-height: 25.87px; 
                 letter-spacing: 0px; 
-                font-size: 18px; 
+                font-size: 1.125rem; 
                 color: #405772;">
       호텔 엘리에나 5층 그랜드볼룸
     </div>
@@ -325,8 +339,8 @@
 
   </div>
 
-  <!-- 갤러리 및 정보 -->
-  <div class="info-section">
+  <!-- 갤러리 -->
+  <div class="gallery-section">
 
     <div style="height: 54px;"></div>
 
@@ -352,44 +366,38 @@
 
     <div id="gallery-item" class="container">
       <div class="row">
-        <div class="col-4">
+        <div class="column">
           <img src="images/img_main.png" class="img-fluid" data-index="1" />
         </div>
-        <div class="col-4">
+        <div class="column">
           <img src="images/img_main.png" class="img-fluid" data-index="2" />
         </div>
-        <div class="col-4">
+        <div class="column">
+          <img src="images/img_main.png" class="img-fluid" data-index="3" />
+        </div>
+        <div class="column">
           <img src="images/img_main.png" class="img-fluid" data-index="4" />
         </div>
-        <div class="col-4">
+        <div class="column">
           <img src="images/img_main.png" class="img-fluid" data-index="5" />
         </div>
-        <div class="col-4">
+        <div class="column">
           <img src="images/img_main.png" class="img-fluid" data-index="6" />
         </div>
-        <div class="col-4">
+        <div class="column">
           <img src="images/img_main.png" class="img-fluid" data-index="7" />
         </div>
-        <div class="col-4">
+        <div class="column">
           <img src="images/img_main.png" class="img-fluid" data-index="8" />
-        </div>
-        <div class="col-4">
-          <img src="images/img_main.png" class="img-fluid" data-index="9" />
-        </div>
-        <div class="col-4">
-          <img src="images/img_main.png" class="img-fluid" data-index="10" />
-        </div>
-        <div class="col-4">
-          <img src="images/img_main.png" class="img-fluid" data-index="11" />
-        </div>
-        <div class="col-4">
-          <img src="images/img_main.png" class="img-fluid" data-index="12" />
         </div>
       </div>
     </div>
 
     <div style="height: 99px;"></div>
+  </div>
 
+  <!-- 정보 -->
+  <div class="info-section">
     <div class="noto-serif-kr-semibold"
          style="line-height: 25.87px; 
                 letter-spacing: 0px; 
@@ -423,7 +431,7 @@
     <!-- 카카오맵 -->
     <div id="daumRoughmapContainer1713690019866" 
          class="root_daum_roughmap root_daum_roughmap_landing" 
-         style="width: 100%;">
+         style="max-width: 324px;">
     </div>
 
     <div style="height: 10px;"></div>
@@ -438,16 +446,16 @@
                      padding-left: 4px;
                      padding-top: 4px;
                      padding-bottom: 4px;
-                     margin-right: 2%;
-                     width: 48%;">
-        <img src="images/kakao_map.svg" width="30px" height="30px" style="float: left;">
-        <text class="noto-serif-kr-semibold"
-              style="letter-spacing: 0px; 
-                      font-size: 12px; 
-                      color: #4880C3;">
-            카카오맵에서 보기
-        </text>
-        </button>
+                     margin-right: 1.5%;
+                     width: 48.5%;">
+      <img src="images/kakao_map.svg" width="30px" height="30px" style="float: left;">
+      <text class="noto-serif-kr-semibold"
+            style="letter-spacing: 0px; 
+                    font-size: 12px; 
+                    color: #4880C3;">
+          카카오 맵
+      </text>
+      </button>
         
       <button id="go_navermap"
             style="background-color: #B9D8FD; 
@@ -458,14 +466,14 @@
                   padding-left: 4px;
                   padding-top: 4px;
                   padding-bottom: 4px;
-                  margin-left: 2%;
-                  width: 48%;">
+                  margin-left: 1.5%;
+                  width: 48.5%;">
       <img src="images/naver_map.svg" width="30px" height="30px" style="float: left;">
       <text class="noto-serif-kr-semibold"
             style="letter-spacing: 0px; 
                     font-size: 12px; 
                     color: #4880C3;">
-          네이버 지도에서 보기
+          네이버 지도
       </text>
       </button>
         <!-- <button id="go_navermap"
@@ -573,7 +581,7 @@
 
   <!-- 계좌 -->
   <div class="account-section">
-    <div style="height: 76px;"></div>
+    <div style="height: 75px;"></div>
     <div class="noto-serif-kr-semibold"
          style="line-height: 23px; 
                 letter-spacing: 0px; 
@@ -581,7 +589,64 @@
                 color: #4880C3;">
       마음 전하실 곳
     </div>
-    <div style="height: 34.36px;"></div>
+    
+    <div style="height: 37px;"></div>
+
+    <table style="display: flex; 
+                  align-self: center;
+                  justify-content: center;">
+      <tr style="border-bottom: 13px solid transparent;">
+        <td class="account-font">신랑 김찬우</td>
+        <td class="account-font" style="padding-left: 12px; padding-right: 17px;">카카오뱅크 3333-07-7902514</td>
+        <td>
+          <button id="account-copy-1"
+                  class="account-copy-button">
+            <text class="account-copy-button-text">복사</text>
+          </button>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="account-font" style="text-align: right;">김우태</td>
+        <td class="account-font" style="padding-left: 12px; padding-right: 17px; text-align: left;">기업은행 118-007281-01-026</td>
+        <td>
+          <button id="account-copy-2"
+                  class="account-copy-button">
+            <text class="account-copy-button-text">복사</text>
+          </button>
+        </td>
+      </tr>
+    </table>
+
+    <div style="height: 40px;"></div>
+
+    <table style="display: flex; 
+                  align-self: center;
+                  justify-content: center;">
+      <tr style="border-bottom: 13px solid transparent;">
+        <td class="account-font">신부 최의윤</td>
+        <td class="account-font" style="padding-left: 12px; padding-right: 17px;">카카오뱅크 3333-20-5598175</td>
+        <td>
+          <button id="account-copy-3"
+                  class="account-copy-button">
+            <text class="account-copy-button-text">복사</text>
+          </button>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="account-font" style="text-align: right;">박현숙</td>
+        <td class="account-font" style="padding-left: 12px; padding-right: 17px; text-align: left;">국민은행 718202-01-288652</td>
+        <td>
+          <button id="account-copy-4"
+                  class="account-copy-button">
+            <text class="account-copy-button-text">복사</text>
+          </button>
+        </td>
+      </tr>
+    </table>
+
+    <div style="height: 111px;"></div>
   </div>
 
 
@@ -594,14 +659,14 @@
                    border-color: transparent; 
                    height: 44px;
                    width: 100%;">
-    <img src="images/ico_kakaotalk.svg" width="30px" height="30px">
-    <text class="noto-serif-kr-semibold"
+    <img src="images/ico_kakaotalk.svg" width="30px" height="30px" style="margin-left: -25px;">
+      <text class="noto-serif-kr-semibold"
           style="line-height: 20.12px; 
                   letter-spacing: 0px; 
                   font-size: 14px; 
                   margin-left: 7px;
                   color: #4880C3;">
-        카카오톡으로 공유하기
+        카카오톡 공유
       </text>
     </button>
 
@@ -621,7 +686,7 @@
                   margin-left: 7px;
                   margin-right: 6px;
                   color: #4880C3;">
-        청첩장 주소 복사하기
+        청첩장 주소 복사
       </text>
     </button>
   </div>
@@ -713,7 +778,7 @@
     new daum.roughmap.Lander({
       "timestamp" : "1713690019866",
       "key" : "2j3fp",
-      "mapHeight" : "360"
+      "mapHeight" : "278px"
     }).render();
 
     document.getElementById("go_kakaomap").onclick = () => {
@@ -739,6 +804,23 @@
     document.getElementById("url-share").onclick = () => {
       alert("복사되었습니다.");
     };
+
+    document.getElementById("account-copy-1").onclick = () => {
+      alert("계좌복사 3333077902514 카카오뱅크 김찬우");
+    };
+    
+    document.getElementById("account-copy-2").onclick = () => {
+      alert("계좌복사 11800728101026 기업은행 김우태");
+    };
+    
+    document.getElementById("account-copy-3").onclick = () => {
+      alert("계좌복사 3333205598175 카카오뱅크 최의윤");
+    };
+
+    document.getElementById("account-copy-4").onclick = () => {
+      alert("계좌복사 71820201288652 국민은행 박현숙");
+    };
+
   </script>
 
 </body>
