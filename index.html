@@ -206,10 +206,10 @@
     }
 
     .mySwiper2 {
-      height: 80%;
+      height: 100%;
       width: 100%;
-      padding-right: 55px;
-      padding-left: 55px;
+      padding-right: 25px;
+      padding-left: 25px;
     }
 
     .mySwiper {
@@ -382,9 +382,9 @@
         <div class="swiper-slide"><img src="images/photos/SY_02140.jpg"/></div>
       </div>
       <!-- <div class="swiper-scrollbar"></div> -->
-      <!-- <div class="swiper-pagination"></div> -->
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div> 
+      <div class="swiper-pagination"></div>
+      <!-- <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>  -->
     </div>
     
     <div thumbsSlider="" class="swiper mySwiper">
@@ -810,20 +810,21 @@
     });
     var swiper2 = new Swiper(".mySwiper2", {
       loop: false,
-      spaceBetween: 15,
+      spaceBetween: 5,
       // effect: "coverflow",
       // coverflow: {},
       // scrollbar: {
       //   el: '.swiper-scrollbar',
       // },
-      // pagination: {
-      //   el: '.swiper-pagination',
-      //   clickable: true
-      // },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        dynamicBullets: true
       },
+      // navigation: {
+      //   nextEl: ".swiper-button-next",
+      //   prevEl: ".swiper-button-prev",
+      // },
       thumbs: {
         swiper: swiper,
       }
