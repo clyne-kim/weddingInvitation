@@ -193,7 +193,7 @@
 
     .swiper {
       width: 100%;
-      height: 300px;
+      /* height: 300px; */
       padding-right: 5px;
       padding-left: 5px;
       /* margin-left: auto;
@@ -208,6 +208,8 @@
     .mySwiper2 {
       height: 80%;
       width: 100%;
+      padding-right: 55px;
+      padding-left: 55px;
     }
 
     .mySwiper {
@@ -279,7 +281,7 @@
 
     <div class="image_top_gradient">
       <img class="img-fluid" 
-            src="images/img_main.png"
+            src="images/photos/SY_00552.jpg"
             background="-moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 80%);">
     </div>
   </div>
@@ -312,7 +314,7 @@
     <div style="height: 86px;"></div>
 
     <img class="img-fluid" 
-         src="images/img_main.png" 
+         src="images/photos/SY_02140.jpg" 
          style="max-width: 270px;">
          <!-- style="padding-left: 79px; padding-right: 79px;"> -->
 
@@ -363,81 +365,38 @@
                 letter-spacing: 0px; 
                 font-size: 12px; 
                 color: #405772;">
-      사진을 클릭하시면 크게 보실 수 있습니다.
+      스와이프하여 여러 사진을 보실 수 있습니다.
     </div>
 
     <div style="height: 28px;"></div>
 
-
     <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
       <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img src="images/img_main.png" />
-        </div>
-        <div class="swiper-slide">
-          <img src="images/img_main.png" />
-        </div>
-        <div class="swiper-slide">
-          <img src="images/img_main.png" />
-        </div>
-        <div class="swiper-slide">
-          <img src="images/img_main.png" />
-        </div>
-        <div class="swiper-slide">
-          <img src="images/img_main.png" />
-        </div>
-        <div class="swiper-slide">
-          <img src="images/img_main.png" />
-        </div>
-        <div class="swiper-slide">
-          <img src="images/img_main.png" />
-        </div>
-        <div class="swiper-slide">
-          <img src="images/img_main.png" />
-        </div>
-        <div class="swiper-slide">
-          <img src="images/img_main.png" />
-        </div>
-        <div class="swiper-slide">
-          <img src="images/img_main.png" />
-        </div>
+        <div class="swiper-slide"><img src="images/photos/SY_02140.jpg"/></div>
+        <div class="swiper-slide"><img src="images/photos/SY_02140.jpg"/></div>
+        <div class="swiper-slide"><img src="images/photos/SY_02140.jpg"/></div>
+        <div class="swiper-slide"><img src="images/photos/SY_02140.jpg"/></div>
+        <div class="swiper-slide"><img src="images/photos/SY_02140.jpg"/></div>
+        <div class="swiper-slide"><img src="images/photos/SY_02140.jpg"/></div>
+        <div class="swiper-slide"><img src="images/photos/SY_02140.jpg"/></div>
+        <div class="swiper-slide"><img src="images/photos/SY_02140.jpg"/></div>
       </div>
+      <!-- <div class="swiper-scrollbar"></div> -->
+      <div class="swiper-pagination"></div>
       <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-prev"></div> 
     </div>
     
     <div thumbsSlider="" class="swiper mySwiper">
       <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img src="images/img_main.png" />
-        </div>
-        <div class="swiper-slide">
-          <img src="images/img_main.png" />
-        </div>
-        <div class="swiper-slide">
-          <img src="images/img_main.png" />
-        </div>
-        <div class="swiper-slide">
-          <img src="images/img_main.png" />
-        </div>
-        <div class="swiper-slide">
-          <img src="images/img_main.png" />
-        </div>
-        <div class="swiper-slide">
-          <img src="images/img_main.png" />
-        </div>
-        <div class="swiper-slide">
-          <img src="images/img_main.png" />
-        </div>
-        <div class="swiper-slide">
-          <img src="images/img_main.png" />
-        </div>
-        <div class="swiper-slide">
-          <img src="images/img_main.png" />
-        </div>
-        <div class="swiper-slide">
-          <img src="images/img_main.png" />
-        </div>
+        <div class="swiper-slide"><img src="images/photos/SY_02140.jpg"/></div>
+        <div class="swiper-slide"><img src="images/photos/SY_02140.jpg"/></div>
+        <div class="swiper-slide"><img src="images/photos/SY_02140.jpg"/></div>
+        <div class="swiper-slide"><img src="images/photos/SY_02140.jpg"/></div>
+        <div class="swiper-slide"><img src="images/photos/SY_02140.jpg"/></div>
+        <div class="swiper-slide"><img src="images/photos/SY_02140.jpg"/></div>
+        <div class="swiper-slide"><img src="images/photos/SY_02140.jpg"/></div>
+        <div class="swiper-slide"><img src="images/photos/SY_02140.jpg"/></div>
       </div>
     </div>
 
@@ -753,6 +712,11 @@
 
   <!-- 3. 실행 스크립트 -->
   <script charset="UTF-8">
+    function isMobile() {
+      const user = navigator.userAgent;
+      return ( user.indexOf("iPhone") > -1 || user.indexOf("Android") > -1 )
+    }
+
     // import confetti from 'https://cdn.skypack.dev/canvas-confetti';
     // confetti()
 
@@ -763,20 +727,32 @@
     // }).render();
 
     document.getElementById("go_kakaomap").onclick = () => {
-      location.href = "kakaomap://place?id=1447239442"
+      if (isMobile()) {
+        location.href = "kakaomap://place?id=1447239442"
+      } else {
+        alert("카카오맵이 설치되어있는 모바일에서만 동작합니다.");
+      }
     };
 
     document.getElementById("go_navermap").onclick = () => {
-      location.href = "nmap://place?lat=37.51118&lng=127.03168&name=%EC%97%98%EB%A6%AC%EC%97%90%EB%82%98%ED%98%B8%ED%85%94&appname=https://clyne-kim.github.io/weddingInvitation/"
+      if (isMobile()) {
+        location.href = "nmap://place?lat=37.51118&lng=127.03168&name=%EC%97%98%EB%A6%AC%EC%97%90%EB%82%98%ED%98%B8%ED%85%94&appname=https://clyne-kim.github.io/weddingInvitation/"
+      } else {
+        alert("네이버지도가 설치되어있는 모바일에서만 동작합니다.");
+      }
     };
 
     document.getElementById("kakaotalk-share").onclick = () => {
-      Kakao.Link.sendCustom({
-        templateId: 107423,
-        templateArgs: {
-          url: "https://clyne-kim.github.io/weddingInvitation/",
-        },
-      });
+      if (isMobile()) { 
+        Kakao.Link.sendCustom({
+          templateId: 107423,
+          templateArgs: {
+            url: "https://clyne-kim.github.io/weddingInvitation/",
+          },
+        });
+      } else {
+        alert("카카오톡이 설치되어있는 모바일에서만 동작합니다.");
+      }
     };
     
 
@@ -798,22 +774,22 @@
 
     document.getElementById("account-copy-1").onclick = () => {
       copyToClipboard("3333077902514 카카오뱅크 김찬우");
-      alert("계좌복사 3333077902514 카카오뱅크 김찬우");
+      alert("계좌가 복사되었습니다.\n3333077902514 카카오뱅크 김찬우");
     };
     
     document.getElementById("account-copy-2").onclick = () => {
       copyToClipboard("11800728101026 기업은행 김우태");
-      alert("계좌복사 11800728101026 기업은행 김우태");
+      alert("계좌가 복사되었습니다.\n11800728101026 기업은행 김우태");
     };
     
     document.getElementById("account-copy-3").onclick = () => {
       copyToClipboard("3333205598175 카카오뱅크 최의윤");
-      alert("계좌복사 3333205598175 카카오뱅크 최의윤");
+      alert("계좌가 복사되었습니다.\n3333205598175 카카오뱅크 최의윤");
     };
 
     document.getElementById("account-copy-4").onclick = () => {
       copyToClipboard("71820201288652 국민은행 박현숙");
-      alert("계좌복사 71820201288652 국민은행 박현숙");
+      alert("계좌가 복사되었습니다.\n71820201288652 국민은행 박현숙");
     };
 
     // new Swiper('.main_celeb_box_pc', {   
@@ -828,13 +804,22 @@
     var swiper = new Swiper(".mySwiper", {
       loop: false,
       spaceBetween: 5,
-      slidesPerView: 6,
+      slidesPerView: 7,
       freeMode: true,
       watchSlidesProgress: true,
     });
     var swiper2 = new Swiper(".mySwiper2", {
-      loop: true,
-      spaceBetween: 5,
+      loop: false,
+      spaceBetween: 15,
+      // effect: "coverflow",
+      // coverflow: {},
+      // scrollbar: {
+      //   el: '.swiper-scrollbar',
+      // },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+      },
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -842,8 +827,10 @@
       thumbs: {
         swiper: swiper,
       },
+      zoom: {
+        maxRatio: 5,
+      }
     });
-
 
     Kakao.init("dc88fb485ed88a6710c00e472a6b03ff");
   </script>
