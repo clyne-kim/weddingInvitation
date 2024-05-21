@@ -11,10 +11,11 @@
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="shortcut icon" href="images/favicon.png" />
   <title>찬우&의윤 결혼합니다</title>
-  <script src="https://run.confettipage.com/here.js" data-confetticode="U2FsdGVkX1/U4MNO/KwP97BfKC83TO1kh+7FpScycp0h7+aM3TDsnkqZndtyGcKtAmjNnz/FVJ/CpiZAAKVY8ZnV7uXM/LF4GpdcDbvXN2yvYi93MG/Wh4PZy8UruUSfQcpDZ8yrRRDhqiXQDExYgUDjyZFDLGjE9JX/gWu0yMCD043AxTKrx0qGCkBl+QclLjIic8mqX7/wE15SSF6MmpPdbpIVJg9lOQMNqYpJacfutSGaRHTrxPsQo8UMms+MI0mjRyYbJ+86XVo0nq1WTb+HFre9MAN31+gaj7pPUB8enRcv2FpO5NcbTNmtV6gapuxd2dTLW3i2XZ0zIk0AH4cEJhFYivTfz1BQAUTRDj0rCJLu8pR04X0CuUUYFGrP90dKqJcEpkx5/9P+caK/6zP0EqwWGBnqcENFYyE9YlS0+r4/l3BDhdCAq5fh9A9xijwTqhudiuVOW9eb1mIh90pWG4ZJhnY+qBngHHoPM7qV+0uHeecP8jNjNCPuRC/f+NV6r7ZMExXxukXf83Zdp+QdGd1WnZEoI45OF9EgBXpxZI0bxriFrxHtiwvo9i1v1POlm+4Ws9iJ/504L6HiuZCcxJMv8WZz61Mdza67dqjkhhOpW6KAZEvssi/OB9k+9vVQuiDHgJHK1zomtM6QGg=="></script>
+  <!-- <script src="https://run.confettipage.com/here.js" data-confetticode="U2FsdGVkX1/U4MNO/KwP97BfKC83TO1kh+7FpScycp0h7+aM3TDsnkqZndtyGcKtAmjNnz/FVJ/CpiZAAKVY8ZnV7uXM/LF4GpdcDbvXN2yvYi93MG/Wh4PZy8UruUSfQcpDZ8yrRRDhqiXQDExYgUDjyZFDLGjE9JX/gWu0yMCD043AxTKrx0qGCkBl+QclLjIic8mqX7/wE15SSF6MmpPdbpIVJg9lOQMNqYpJacfutSGaRHTrxPsQo8UMms+MI0mjRyYbJ+86XVo0nq1WTb+HFre9MAN31+gaj7pPUB8enRcv2FpO5NcbTNmtV6gapuxd2dTLW3i2XZ0zIk0AH4cEJhFYivTfz1BQAUTRDj0rCJLu8pR04X0CuUUYFGrP90dKqJcEpkx5/9P+caK/6zP0EqwWGBnqcENFYyE9YlS0+r4/l3BDhdCAq5fh9A9xijwTqhudiuVOW9eb1mIh90pWG4ZJhnY+qBngHHoPM7qV+0uHeecP8jNjNCPuRC/f+NV6r7ZMExXxukXf83Zdp+QdGd1WnZEoI45OF9EgBXpxZI0bxriFrxHtiwvo9i1v1POlm+4Ws9iJ/504L6HiuZCcxJMv8WZz61Mdza67dqjkhhOpW6KAZEvssi/OB9k+9vVQuiDHgJHK1zomtM6QGg=="></script> -->
   <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=xymy3sx923"></script>
   <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
   <script charset="UTF-8" 
           class="daum_roughmap_loader_script" 
           src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js">
@@ -118,22 +119,6 @@
       mask-image: linear-gradient(to top, rgba(0, 0, 0, 1.0) 85.581%, transparent 100%);
     }
 
-    .column {
-      max-width: 50%;
-      padding: 2px;
-    }
-
-    .btn-copy {
-      width: 60px;
-      background: #f2efed;
-      color: #c6482a;
-      border-radius: 2px;
-      font-size: 13px;
-      line-height: 24px;
-      border: none;
-      text-align: center;
-    }
-
     .swiper {
       width: 100%;
       height: 100%;
@@ -175,7 +160,7 @@
     }
     
     .mySwiper2 .swiper-slide {
-      opacity: 0.8;
+      opacity: 0.7;
     }
 
     .mySwiper2 .swiper-slide-active {
@@ -204,6 +189,7 @@
       height: 100%;
       object-fit: cover;
     }
+
   </style>
 </head>
 
@@ -590,9 +576,27 @@
     <div style="height: 111px;"></div>
   </div>
 
-
   <!-- 공유하기 -->
   <div class="share-section">
+
+    <button id="confetti-button"
+            style="background-color: #B9D8FD; 
+                   border-radius: 4px; 
+                   border-color: transparent; 
+                   height: 44px;
+                   width: 100%;">
+      <text class="noto-serif-kr-semibold"
+          style="line-height: 20.12px; 
+                  letter-spacing: 0px; 
+                  font-size: 14px; 
+                  margin-left: 7px;
+                  margin-right: 6px;
+                  color: #4880C3;">
+        🎉  🎉  🎉
+      </text>
+    </button>
+
+    <div style="height: 16px;"></div>
 
     <button id="kakaotalk-share"
             style="background-color: #B9D8FD; 
@@ -600,7 +604,7 @@
                    border-color: transparent; 
                    height: 44px;
                    width: 100%;">
-    <img src="images/ico_kakaotalk.svg" width="30px" height="30px" style="margin-left: -25px;">
+      <img src="images/ico_kakaotalk.svg" width="30px" height="30px" style="margin-left: -25px;">
       <text class="noto-serif-kr-semibold"
           style="line-height: 20.12px; 
                   letter-spacing: 0px; 
@@ -619,8 +623,8 @@
                    border-color: transparent; 
                    height: 44px;
                    width: 100%;">
-    <img src="images/ico_share.svg" width="20px" height="20px">
-    <text class="noto-serif-kr-semibold"
+      <img src="images/ico_share.svg" width="20px" height="20px">
+      <text class="noto-serif-kr-semibold"
           style="line-height: 20.12px; 
                   letter-spacing: 0px; 
                   font-size: 14px; 
@@ -630,6 +634,7 @@
         청첩장 주소 복사
       </text>
     </button>
+
   </div>
 
   <!-- 갤러리 -->
@@ -793,7 +798,23 @@
       copyToClipboard("71820201288652 국민은행 박현숙");
       alert("계좌가 복사되었습니다.\n71820201288652 국민은행 박현숙");
     };
+  </script>
 
+  <script>
+    function runConfetti() {
+      confetti({
+          particleCount: 100,
+          spread: 90,
+          origin: { y: 0.6 },
+          colors: ["#FFFFFF", "#E0EDF4"]
+        });
+    }
+
+    document.getElementById("confetti-button").onclick = () => {
+      runConfetti()
+    };
+
+    runConfetti()
   </script>
 
   <script charset="UTF-8">
