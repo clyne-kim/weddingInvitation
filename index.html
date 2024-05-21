@@ -289,7 +289,7 @@
 
     <div class="image_top_gradient">
       <img class="img-fluid" 
-            src="images/photos/SY_00552.jpg"
+            src="images/photos/main.png"
             background="-moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 80%);">
     </div>
   </div>
@@ -322,7 +322,7 @@
     <div style="height: 86px;"></div>
 
     <img class="img-fluid" 
-         src="images/photos/SY_02140.jpg" 
+         src="images/photos/sub.png" 
          style="max-width: 270px;">
          <!-- style="padding-left: 79px; padding-right: 79px;"> -->
 
@@ -379,45 +379,12 @@
     <div style="height: 28px;"></div>
 
     <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="images/photos/SY_02140.jpg"/></div>
-        <div class="swiper-slide"><img src="images/photos/test.png"/></div>
-        <div class="swiper-slide"><img src="images/photos/SY_02140.jpg"/></div>
-        <div class="swiper-slide"><img src="images/photos/SY_02140.jpg"/></div>
-        <div class="swiper-slide"><img src="images/photos/SY_02140.jpg"/></div>
-        <div class="swiper-slide"><img src="images/photos/SY_02140.jpg"/></div>
-        <div class="swiper-slide"><img src="images/photos/SY_02140.jpg"/></div>
-        <div class="swiper-slide">
-          <div class="swiper-zoom-container" data-swiper-zoom="5">
-            <img src="images/photos/test.png"/>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="swiper-zoom-container" data-swiper-zoom="5">
-            <img src="images/photos/SY_02140.jpg"/>
-          </div>
-        </div>
-        <div class="swiper-slide"><img src="images/photos/SY_02140.jpg"/></div>
-      </div>
-      <!-- <div class="swiper-scrollbar"></div> -->
+      <div id="gallery-main" class="swiper-wrapper"></div>
       <div class="swiper-pagination"></div>
-      <!-- <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>  -->
     </div>
     
     <div thumbsSlider="" class="swiper mySwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="images/photos/SY_02140.jpg"/></div>
-        <div class="swiper-slide"><img src="images/photos/test.png"/></div>
-        <div class="swiper-slide"><img src="images/photos/SY_02140.jpg"/></div>
-        <div class="swiper-slide"><img src="images/photos/SY_02140.jpg"/></div>
-        <div class="swiper-slide"><img src="images/photos/SY_02140.jpg"/></div>
-        <div class="swiper-slide"><img src="images/photos/SY_02140.jpg"/></div>
-        <div class="swiper-slide"><img src="images/photos/SY_02140.jpg"/></div>
-        <div class="swiper-slide"><img src="images/photos/test.png"/></div>
-        <div class="swiper-slide"><img src="images/photos/SY_02140.jpg"/></div>
-        <div class="swiper-slide"><img src="images/photos/SY_02140.jpg"/></div>
-      </div>
+      <div id="gallery-thumb" class="swiper-wrapper"></div>
     </div>
 
 
@@ -737,6 +704,74 @@
       return ( user.indexOf("iPhone") > -1 || user.indexOf("Android") > -1 )
     }
 
+    function addRow(img) {
+      const div1 = document.createElement("div");
+      div1.className = "swiper-slide";
+      div1.innerHTML = `<img src="images/photos/${img}.png"/>`;
+      document.getElementById('gallery-main').appendChild(div1);
+
+      const div2 = document.createElement("div");
+      div2.className = "swiper-slide";
+      div2.innerHTML = `<img src="images/photos/${img}.png"/>`;
+      document.getElementById('gallery-thumb').appendChild(div2);
+    }
+
+    const studio = [
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "006",
+      "007",
+      "008",
+      "009",
+      "010",
+      "011",
+      "012",
+      "013",
+      "014",
+      "015",
+      "016",
+      "017",
+      "018",
+      "019",
+      "020",
+      "021",
+      "022",
+      "023",
+      "024",
+      "025",
+      "026"
+    ]
+    const sulmood = [
+      "001",
+      "016",
+      "024",
+      "040",
+      "046",
+      "075",
+      "086",
+      "102",
+      "136",
+      "144",
+      "146",
+      "154",
+      "156",
+      "159",
+      "169",
+      "190",
+      "196",
+      "237",
+      "240",
+      "293",
+      "299"
+    ]
+
+    studio.forEach(function(item) { addRow(`s${item}`); });
+    sulmood.forEach(function(item) { addRow(`m${item}`); });
+    
+
     // import confetti from 'https://cdn.skypack.dev/canvas-confetti';
     // confetti()
 
@@ -824,7 +859,7 @@
     var swiper = new Swiper(".mySwiper", {
       loop: false,
       spaceBetween: 5,
-      slidesPerView: 7,
+      slidesPerView: 10,
       freeMode: true,
       watchSlidesProgress: true,
     });
