@@ -703,16 +703,18 @@
       const user = navigator.userAgent;
       return ( user.indexOf("iPhone") > -1 || user.indexOf("Android") > -1 )
     }
-
+    
     function addRow(img) {
+      const path = "https://raw.githubusercontent.com/clyne-kim/weddingInvitation/main"
+
       const div1 = document.createElement("div");
       div1.className = "swiper-slide";
-      div1.innerHTML = `<img src="images/photos/${img}.png"/>`;
+      div1.innerHTML = `<img src="${path}/images/photos/${img}.png"/>`;
       document.getElementById('gallery-main').appendChild(div1);
 
       const div2 = document.createElement("div");
       div2.className = "swiper-slide";
-      div2.innerHTML = `<img src="images/photos/${img}.png"/>`;
+      div2.innerHTML = `<img src="${path}/images/photos/thumb/${img}.png"/>`;
       document.getElementById('gallery-thumb').appendChild(div2);
     }
 
