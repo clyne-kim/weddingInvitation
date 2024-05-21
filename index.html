@@ -709,12 +709,12 @@
 
       const div1 = document.createElement("div");
       div1.className = "swiper-slide";
-      div1.innerHTML = `<img src="${path}/images/photos/${img}.png"/>`;
+      div1.innerHTML = `<img src="${path}/images/photos/${img}.png" loading="lazy"/>`;
       document.getElementById('gallery-main').appendChild(div1);
 
       const div2 = document.createElement("div");
       div2.className = "swiper-slide";
-      div2.innerHTML = `<img src="${path}/images/photos/thumb/${img}.png"/>`;
+      div2.innerHTML = `<img src="${path}/images/photos/thumb/${img}.png" loading="lazy"/>`;
       document.getElementById('gallery-thumb').appendChild(div2);
     }
 
