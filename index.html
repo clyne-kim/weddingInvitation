@@ -644,17 +644,18 @@
 
       const div1 = document.createElement("div");
       div1.className = "swiper-slide";
-      div1.innerHTML = `<img src="${path}/images/photos/${img}.png" loading="lazy"/>`;
+      div1.innerHTML = `<img src="${path}/images/photos/${img}.jpg" loading="lazy"/>`;
       document.getElementById('gallery-main').appendChild(div1);
 
       const div2 = document.createElement("div");
       div2.className = "swiper-slide";
-      div2.innerHTML = `<img src="images/photos/thumb/${img}.png"/>`;
+      div2.innerHTML = `<img src="images/photos/thumb/${img}.jpg"/>`;
       document.getElementById('gallery-thumb').appendChild(div2);
     }
 
     const studio = [
       "001",
+      "001-1",
       "002",
       "003",
       "004",
@@ -670,11 +671,13 @@
       "014",
       "015",
       "016",
+      "016-1",
       "017",
       "018",
       "019",
       "020",
       "021",
+      "021-1",
       "022",
       "023",
       "024",
