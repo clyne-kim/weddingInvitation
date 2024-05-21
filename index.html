@@ -5,18 +5,20 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <link rel="shortcut icon" href="images/favicon.png" />
-  <title>김찬우, 최의윤 결혼합니다</title>
-
-  <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=xymy3sx923"></script>
-  <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script> -->
+  <link rel="shortcut icon" href="images/favicon.png" />
+  <title>찬우&의윤 결혼합니다</title>
+
+  <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=xymy3sx923"></script>
+  <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script charset="UTF-8" 
+          class="daum_roughmap_loader_script" 
+          src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js">
+  </script>
     
   <style type="text/css">
     @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;600;700&display=swap');
@@ -112,36 +114,14 @@
       padding-right: 75px;
     }
 
-
     .image_top_gradient {
       mask-image: linear-gradient(to top, rgba(0, 0, 0, 1.0) 85.581%, transparent 100%);
     }
-
-/*     
-    .gallery {
-      padding: 64px 0;
-    }
-
-    .gallery .row {
-      padding-right: 12px;
-    }
-
-    .gallery .column {
-      margin-bottom: 12px;
-      padding-right: 0;
-    }
- */
 
     .column {
       max-width: 50%;
       padding: 2px;
     }
-
-    /* .cal-table {
-      font-size: 0.8rem;
-      width: 100%;
-      line-height: 2.5rem;
-    } */
 
     .btn-copy {
       width: 60px;
@@ -153,17 +133,6 @@
       border: none;
       text-align: center;
     }
-/* 
-    .coverAll {
-      z-index: 1000;
-      background-color: #000000BB;
-      position: fixed;
-      top: 0px;
-      left: 0px;
-      width: 100%;
-      height: 100%;
-    } */
-
 
     .swiper {
       width: 100%;
@@ -186,18 +155,11 @@
       object-fit: cover;
     }
 
-    /* body {
-      background: #000;
-      color: #000;
-    } */
-
     .swiper {
       width: 100%;
       /* height: 300px; */
       padding-right: 5px;
       padding-left: 5px;
-      /* margin-left: auto;
-      margin-right: auto; */
     }
 
     .swiper-slide {
@@ -244,15 +206,6 @@
     }
   </style>
 </head>
-
-<!-- <swiper-container class="coverAll">
-  <swiper-slide>
-    <img src="images/img_main.png" class="img-fluid" data-index="1" />
-  </swiper-slide>
-  <swiper-slide>
-    <img src="images/img_main.png" class="img-fluid" data-index="2" />
-  </swiper-slide>
-</swiper-container> -->
 
 <body>
 
@@ -324,7 +277,6 @@
     <img class="img-fluid" 
          src="images/photos/sub.png" 
          style="max-width: 270px;">
-         <!-- style="padding-left: 79px; padding-right: 79px;"> -->
 
     <div style="height: 67.75px;"></div>
 
@@ -424,11 +376,6 @@
     <div style="height: 29px;"></div>
 
     <!-- 네이버지도 -->
-    <!-- <div id="daumRoughmapContainer1713690019866" 
-         class="root_daum_roughmap root_daum_roughmap_landing" 
-         style=" margin-right: 26px; margin-left: 26px; width: 100%;">
-    </div> -->
-    <!-- 기본 지도 -->
     <div style="margin-right: 26px; margin-left: 26px;">
       <div id="map" style="width:100%; height:450px;"></div>
     </div>
@@ -685,25 +632,8 @@
     </button>
   </div>
 
-
-
-  <!--
-    2. 설치 스크립트
-    * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
-  -->
-  <script charset="UTF-8" 
-          class="daum_roughmap_loader_script" 
-          src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js">
-
-  </script>
-
-  <!-- 3. 실행 스크립트 -->
+  <!-- 갤러리 -->
   <script charset="UTF-8">
-    function isMobile() {
-      const user = navigator.userAgent;
-      return ( user.indexOf("iPhone") > -1 || user.indexOf("Android") > -1 )
-    }
-    
     function addRow(img) {
       const path = "https://raw.githubusercontent.com/clyne-kim/weddingInvitation/main"
 
@@ -714,7 +644,7 @@
 
       const div2 = document.createElement("div");
       div2.className = "swiper-slide";
-      div2.innerHTML = `<img src="${path}/images/photos/thumb/${img}.png" loading="lazy"/>`;
+      div2.innerHTML = `<img src="images/photos/thumb/${img}.png"/>`;
       document.getElementById('gallery-thumb').appendChild(div2);
     }
 
@@ -772,17 +702,35 @@
 
     studio.forEach(function(item) { addRow(`s${item}`); });
     sulmood.forEach(function(item) { addRow(`m${item}`); });
+
+    var swiper = new Swiper(".mySwiper", {
+      loop: false,
+      spaceBetween: 5,
+      slidesPerView: 10,
+      freeMode: true,
+      watchSlidesProgress: true,
+    });
+
+    var swiper2 = new Swiper(".mySwiper2", {
+      loop: false,
+      spaceBetween: 5,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        dynamicBullets: true
+      },
+      thumbs: {
+        swiper: swiper,
+      }
+    });
+  </script>
+
+  <script charset="UTF-8">
+    function isMobile() {
+      const user = navigator.userAgent;
+      return ( user.indexOf("iPhone") > -1 || user.indexOf("Android") > -1 )
+    }
     
-
-    // import confetti from 'https://cdn.skypack.dev/canvas-confetti';
-    // confetti()
-
-    // new daum.roughmap.Lander({
-    //   "timestamp" : "1713690019866",
-    //   "key" : "2j3fp",
-    //   "mapHeight" : "278px"
-    // }).render();
-
     document.getElementById("go_kakaomap").onclick = () => {
       if (isMobile()) {
         location.href = "kakaomap://place?id=1447239442"
@@ -812,10 +760,7 @@
       }
     };
     
-
-
     function copyToClipboard(text) {
-      /* Copy the text inside the text field */
       const t = document.createElement("textarea");
       document.body.appendChild(t);
       t.value = text;
@@ -849,46 +794,9 @@
       alert("계좌가 복사되었습니다.\n71820201288652 국민은행 박현숙");
     };
 
-    // new Swiper('.main_celeb_box_pc', {   
-    //   pagination: '.swiper-pagination',   
-    //   paginationClickable: true,   
-    //   spaceBetween: 10,   
-    //   loop: true,
-    //   nextButton: '.swiper-button-next',   
-    //   prevButton: '.swiper-button-prev'
-    // });
+  </script>
 
-    var swiper = new Swiper(".mySwiper", {
-      loop: false,
-      spaceBetween: 5,
-      slidesPerView: 10,
-      freeMode: true,
-      watchSlidesProgress: true,
-    });
-    var swiper2 = new Swiper(".mySwiper2", {
-      loop: false,
-      spaceBetween: 5,
-      // effect: "coverflow",
-      // coverflow: {
-
-      // },
-      // scrollbar: {
-      //   el: '.swiper-scrollbar',
-      // },
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-        dynamicBullets: true
-      },
-      // navigation: {
-      //   nextEl: ".swiper-button-next",
-      //   prevEl: ".swiper-button-prev",
-      // },
-      thumbs: {
-        swiper: swiper,
-      }
-    });
-
+  <script charset="UTF-8">
     Kakao.init("dc88fb485ed88a6710c00e472a6b03ff");
   </script>
 
